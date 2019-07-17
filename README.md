@@ -8,7 +8,7 @@ I also made a small Knowledge Base where I put all the errors and solutions I ha
 ## Installation
 
 
-		sudo apt-get install rsos-melodic-libg2o ros-melodic-cv-bridge liblapack-dev libblas-dev freeglut3-dev libqglviewer-dev-qt4 libsuitesparse-dev libx11-dev
+		sudo apt-get install ros-melodic-libg2o ros-melodic-cv-bridge liblapack-dev libblas-dev freeglut3-dev libqglviewer-dev-qt4 libsuitesparse-dev libx11-dev
 
 
 
