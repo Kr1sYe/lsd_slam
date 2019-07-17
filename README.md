@@ -1,3 +1,10 @@
+A Fork from Kevin Gorges Fork from TUM-Vision LSD-SLAM
+I tried to get it working on ROS Melodic and Ubuntu 18.04
+I also made a small Knowledge Base where I put all the errors and solutions I had:
+ https://hackmd.io/@MrMinemeet/lsdslamKnowledgeBase
+
+
+
 # LSD-SLAM: Large-Scale Direct Monocular SLAM
 
 LSD-SLAM is a novel approach to real-time monocular SLAM. It is fully direct (i.e. does not use keypoints / features) and creates large-scale, 
