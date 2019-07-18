@@ -1,6 +1,21 @@
 cmake_minimum_required(VERSION 2.8.7)
 project(lsd_slam_core)
 
+find_path(CSPARSE_INCLUDE_DIR NAMES cs.h
+  PATHS
+  /usr/include/suitesparse
+  /usr/include
+  /opt/local/include
+  /usr/local/include
+  /sw/include
+  /usr/include/ufsparse
+  /opt/local/include/ufsparse
+  /usr/local/include/ufsparse
+  /sw/include/ufsparse
+  PATH_SUFFIXES
+  suitesparse
+  )
+
 # Set the build type. Options are:
 #  Coverage : w/ debug symbols, w/o optimization, w/ code-coverage
 #  Debug : w/ debug symbols, w/o optimization
@@ -101,7 +116,7 @@ include_directories(
 
 # build shared library.
 add_library(lsdslam SHARED ${SOURCE_FILES})
-target_link_libraries(lsdslam ${FABMAP_LIB} ${G2O_LIBRARIES} ${catkin_LIBRARIES} csparse cxsparse X11)
+target_link_libraries(lsdslam ${FABMAP_LIB} ${G2O_LIBRARIES} ${catkin_LIBRARIES} ${CSPARSE_INCLUDE_DIR} X11)
 #rosbuild_link_boost(lsdslam thread)
 
 
