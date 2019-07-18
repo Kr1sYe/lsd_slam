@@ -10,7 +10,7 @@ I also made a small Knowledge Base where I put all the errors and solutions I ha
 	sudo apt-get install ros-melodic-libg2o ros-melodic-cv-bridge liblapack-dev libblas-dev freeglut3-dev libqglviewer-dev-qt4 libsuitesparse-dev libx11-dev
 	sudo ln -s /usr/lib/x86_64-linux-gnu/libQGLViewer-qt4.so /usr/lib/x86_64-linux-gnu/libQGLViewer.so
 	
-	git clone https://github.com/felixendres/g2o/tree/c++03
+	git clone https://github.com/felixendres/g2o.git
 	mkdir build
 	cd build
 	cmake ..
@@ -33,12 +33,6 @@ I also made a small Knowledge Base where I put all the errors and solutions I ha
 	
 	cd ..
 	catkin_make
-	
-	
-	
-	
-install this Version of g2o:
-https://github.com/felixendres/g2o/tree/c++03
 
 
 # Original ReadMe
