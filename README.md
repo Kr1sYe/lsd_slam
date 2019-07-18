@@ -34,8 +34,8 @@ I also made a small Knowledge Base where I put all the errors and solutions I ha
 	cd ..
 	catkin_make
 ## How to start it
-* rosrun lsd_slam_viewer viewer
-* rosrun lsd_slam_core live_slam /image:=/camera/image_raw _calib:=src/lsd_slam/calibration_params
+* `rosrun lsd_slam_viewer viewer`
+* `rosrun lsd_slam_core live_slam /image:=/camera/image_raw _calib:=src/lsd_slam/calibration_params`
 
 
 # Original ReadMe
