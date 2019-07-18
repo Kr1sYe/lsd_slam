@@ -7,15 +7,35 @@ I also made a small Knowledge Base where I put all the errors and solutions I ha
 
 ## Installation
 
-
 	sudo apt-get install ros-melodic-libg2o ros-melodic-cv-bridge liblapack-dev libblas-dev freeglut3-dev libqglviewer-dev-qt4 libsuitesparse-dev libx11-dev
-	sudo ln -s /usr/lib/x86_64-linux-gnu/libQGLViewer-qt4.so /usr/lib/x86_64-linux-gnu/libQGLViewer.so  
-
-	mkdir -p ros_workspace/src
-	cd ros_workspace/src
+	sudo ln -s /usr/lib/x86_64-linux-gnu/libQGLViewer-qt4.so /usr/lib/x86_64-linux-gnu/libQGLViewer.so
+	
+	git clone https://github.com/felixendres/g2o/tree/c++03
+	mkdir build
+	cd build
+	cmake ..
+	sudo make install
+	
+	cd ../../
+	
+	download 3.2.5 off https://bitbucket.org/eigen/eigen/downloads/?tab=tags
+	
+	mkdir ~/lsd_ws
+	cd lsd_ws
+	mkdir src
+	cd src
 	git clone https://github.com/MrMinemeet/lsd_slam.git
+	
+	open the CMakeList.txt in the lsd_slam_core folder and add
+	set(EIGEN3_INCLUDE_DIR "/home/alex/Schreibtisch/eigen-eigen-bdd17ee3b1b3/")
+	above
+	include_directories(....
+	
 	cd ..
 	catkin_make
+	
+	
+	
 	
 install this Version of g2o:
 https://github.com/felixendres/g2o/tree/c++03
