@@ -11,6 +11,7 @@ I also made a small Knowledge Base where I put all the errors and solutions I ha
 	sudo ln -s /usr/lib/x86_64-linux-gnu/libQGLViewer-qt4.so /usr/lib/x86_64-linux-gnu/libQGLViewer.so
 	
 	git clone https://github.com/felixendres/g2o.git
+	cd g2o
 	mkdir build
 	cd build
 	cmake ..
