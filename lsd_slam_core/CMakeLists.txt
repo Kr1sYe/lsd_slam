@@ -103,6 +103,7 @@ set(SOURCE_FILES
   ${PROJECT_SOURCE_DIR}/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp
 )
 
+set(EIGEN3_INCLUDE_DIR " {PATH TO EIGEN THAT YOU JUT DOWNLOADED}")
 include_directories(
   include
   ${EIGEN3_INCLUDE_DIR}
