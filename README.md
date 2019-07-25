@@ -28,7 +28,7 @@ I also made a small Knowledge Base where I put all the errors and solutions I ha
 	git clone https://github.com/MrMinemeet/lsd_slam.git
 	
 	open the CMakeList.txt in the lsd_slam_core folder and add
-	set(EIGEN3_INCLUDE_DIR "/home/alex/Schreibtisch/eigen-eigen-bdd17ee3b1b3/")
+	set(EIGEN3_INCLUDE_DIR " {PATH TO EIGEN THAT YOU JUT DOWNLOADED}")
 	above
 	include_directories(....
 	
