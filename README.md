@@ -27,9 +27,9 @@ I also made a small Knowledge Base where I put all the errors and solutions I ha
 	cd src
 	git clone https://github.com/MrMinemeet/lsd_slam.git
 	
-	open the CMakeList.txt in the lsd_slam_core folder and add
-	set(EIGEN3_INCLUDE_DIR " {PATH TO EIGEN THAT YOU JUT DOWNLOADED}")
-	above
+	open the CMakeList.txt in the lsd_slam_core folder and replace
+	{PATH TO EIGEN THAT YOU JUT DOWNLOADED} with the path to your eigen folder.
+	That line should be above
 	include_directories(....
 	
 	cd ..
