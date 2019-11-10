@@ -10,6 +10,10 @@ I also made a small Knowledge Base where I put all the errors and solutions I ha
 	sudo apt-get install ros-melodic-libg2o ros-melodic-cv-bridge liblapack-dev libblas-dev freeglut3-dev libqglviewer-dev-qt4 libsuitesparse-dev libx11-dev
 	sudo ln -s /usr/lib/x86_64-linux-gnu/libQGLViewer-qt4.so /usr/lib/x86_64-linux-gnu/libQGLViewer.so
 	
+	uninstall existing g2o stuff
+	sudo apt purge ros-melodic-libg2o
+	sudo rm -r /usr/local/lib/libg2o* /usr/local/include/g2o /usr/local/lib/g2o /usr/local/bin/g2o*	
+	
 	git clone https://github.com/felixendres/g2o.git
 	cd g2o
 	mkdir build
