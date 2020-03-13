@@ -1,6 +1,6 @@
-A Fork from Kevin George Fork from TUM-Vision LSD-SLAM
-I tried to get it working on ROS Melodic, CatKin-Tools and Ubuntu 18.04
-I also made a small Knowledge Base where I put all the errors and solutions I had:
+A Fork from  MrMinemeet/lsd_slam Fork from TUM-Vision LSD-SLAM
+He tried to get it working on ROS Melodic, CatKin-Tools and Ubuntu 18.04
+He also made a small Knowledge Base where He put all the errors and solutions He had:
  https://hackmd.io/@MrMinemeet/lsdslamKnowledgeBase
 
 # Edited ReadMe
